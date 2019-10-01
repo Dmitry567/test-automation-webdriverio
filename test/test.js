@@ -8,5 +8,13 @@ describe('Client', function () { //define suite title by passing a string
       assert.equal(title, 'Progress Monitor'); //compare {title} (actual) and "Bug Tracker" (expected)
     })
 
+    it('URL', function () { //define test title by passing a string
+      let title = $('#site-name').getText ; //get page title and assign it to the "title" variable
+      console.log(title);
+      //assert.equal(title, 'Progress Monitor'); //compare {title} (actual) and "Bug Tracker" (expected)
+    })
+
   });
+
+  
 
