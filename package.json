@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run clean && wdio wdio.conf.js",
+    "test:ted": "wdio wdio.conf.js --spec ./test/specs/ted.js --inspect",
+    "test:amazon": "wdio wdio.conf.js --spec ./test/specs/amazon.js --inspect",
+    "test:mainPage": "wdio wdio.conf.js --spec ./test/specs/mainPage.js --inspect",
     "report": "allure generate --clean && allure open",
     "clean": "rm -rf allure-results"
   },
