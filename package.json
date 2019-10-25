@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run clean && wdio wdio.conf.js",
+    "test:test": "wdio wdio.conf.js --spec ./test/test.js --inspect",
     "test:ted": "wdio wdio.conf.js --spec ./test/specs/ted.js --inspect",
     "test:amazon": "wdio wdio.conf.js --spec ./test/specs/amazon.js --inspect",
     "test:mainPage": "wdio wdio.conf.js --spec ./test/specs/mainPage.js --inspect",
-    "report": "allure generate --clean && allure open",
-    "clean": "rm -rf allure-results"
+    "report:generate": "allure generate reports/allure/raw -o reports/allure/final --clean && npm run report:open",
+    "report:open": "allure open reports/allure/final",
+    "report:clean": "rm -rf reports && rm -rf _results_"
   },
   "author": "Dmitry Favorskiy",
   "license": "ISC",
