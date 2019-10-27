@@ -1,8 +1,10 @@
-//const before = require("./hooks/before");
-//const afterTest = require("./hooks/afterTest");
+//const before = require("./test/hooks/before");
+//const afterTest = require("./test/hooks/afterTest");
 //const video = require("wdio-video-reporter");
 
 exports.config = {
+  //debug: true,
+  // execArgv: ["--inspect-brk=127.0.0.1:5859"],
   //
   // ====================
   // Runner Configuration
@@ -88,7 +90,7 @@ exports.config = {
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  baseUrl: "https://app.pasv.us/",
+  baseUrl: "http://localhost",
   //
   // Default timeout for all waitFor* commands.
   waitforTimeout: 10000,
@@ -209,7 +211,7 @@ exports.config = {
    * Function to be executed after a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
    * @param {Object} test test details
    */
-  // afterTest: afterTest
+  //afterTest: afterTest
 
   /**
    * Hook that gets executed after the suite has ended

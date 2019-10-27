@@ -20,9 +20,15 @@ describe("AMAZON", () => {
       const element = $('//div[@id="nav-logo"]');
       const text = element.getText();
 
-      const expected = "Amazon";
+      const expected = "Try Prime";
 
       expect(text).to.equal(expected);
+    });
+
+    it("should type SAMSUNG in the search bar of AMAZON", () => {
+      const input = $('//input[@type="text"]');
+      input.setValue("SAMSUNG");
+      browser.keys("ENTER");
     });
   });
 });

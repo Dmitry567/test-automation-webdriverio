@@ -6,6 +6,7 @@
   "scripts": {
     "test": "npm run clean && wdio wdio.conf.js",
     "test:test": "wdio wdio.conf.js --spec ./test/test.js --inspect",
+    "test:login": "wdio wdio.conf.js --spec ./test/specs/login.js --inspect",
     "test:ted": "wdio wdio.conf.js --spec ./test/specs/ted.js --inspect",
     "test:amazon": "wdio wdio.conf.js --spec ./test/specs/amazon.js --inspect",
     "test:mainPage": "wdio wdio.conf.js --spec ./test/specs/mainPage.js --inspect",
