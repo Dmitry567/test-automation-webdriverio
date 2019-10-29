@@ -28,7 +28,6 @@ describe("AMAZON", () => {
     it("should type SAMSUNG in the search bar of AMAZON", () => {
       const input = $('//input[@type="text"]');
       input.setValue("SAMSUNG");
-      browser.keys("ENTER");
     });
   });
 });
