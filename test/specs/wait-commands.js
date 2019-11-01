@@ -12,12 +12,12 @@ describe(`waitFor* commands`, () => {
     expect($(`#finish h4`).getText()).to.equal(`Hello World!`);
   });
   */
-  /*
+
   it(`waitForExist`, () => {
     $(`#start button`).click();
     $(`#finish`).getText();
   });
-  */
+
   /*
   it(`waitForExist`, () => {
     $(`#start button`).click();
@@ -26,6 +26,7 @@ describe(`waitFor* commands`, () => {
     const text = $(`#finish`).getText();
   });
   */
+
   it(`waitForEnabled`, () => {
     const input = $(`#input-example input`);
     $(`#input-example button`).click();
