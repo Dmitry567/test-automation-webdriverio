@@ -21,4 +21,14 @@ describe("Main page", () => {
     const isDisplayed = $('//a[@href="/healthcare-providers"]').isDisplayed();
     expect(isDisplayed).to.be.false;
   });
+  it("should detected if an element is displayed", () => {
+    const isDisplayed = $('//a[@href="/careers"]').isDisplayed();
+    expect(isDisplayed).to.be.true;
+  });
+  it("should detected if an element is displayed", () => {
+    const isDisplayed = $('//a[@href="/investors"]').isDisplayed();
+    expect(isDisplayed).to.be.true;
+
+    browser.pause(10000);
+  });
 });

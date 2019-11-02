@@ -14,6 +14,7 @@
     "test:wait-commands": "wdio wdio.conf.js --spec ./test/specs/wait-commands.js --inspect",
     "test:waitUntil": "wdio wdio.conf.js --spec ./test/specs/waitUntil.js --inspect",
     "test:allergan": "wdio wdio.conf.js --spec ./test/specs/allergan.js --inspect",
+    "test:patientsLink": "wdio wdio.conf.js --spec ./test/specs/patientsLink.js --inspect",
     "report:generate": "allure generate reports/allure/raw -o reports/allure/final --clean && npm run report:open",
     "report:open": "allure open reports/allure/final",
     "report:clean": "rm -rf reports && rm -rf _results_"
