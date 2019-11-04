@@ -126,6 +126,16 @@ exports.config = {
   // see also: https://webdriver.io/docs/dot-reporter.html
   reporters: [
     "dot",
+    [
+      "junit",
+      {
+        outputDir: "./"
+      }
+    ]
+  ],
+
+  reporters: [
+    "dot",
     "spec",
     [
       "allure",
