@@ -16,6 +16,8 @@
     "test:allergan": "wdio wdio.conf.js --spec ./test/specs/allergan.js --inspect",
     "test:patientsLink": "wdio wdio.conf.js --spec ./test/specs/patientsLink.js --inspect",
     "test:redirectLinks": "wdio wdio.conf.js --spec ./test/specs/redirectLinks.js --inspect",
+    "test:redirectLinks2": "wdio wdio.conf.js --spec ./test/specs/redirectLinks2.js --inspect",
+    "test:redirectLinks3": "wdio wdio.conf.js --spec ./test/specs/redirectLinks3.js --inspect",
     "test:search": "wdio wdio.conf.js --spec ./test/specs/search.js --inspect",
     "report:generate": "allure generate reports/allure/raw -o reports/allure/final --clean && npm run report:open",
     "report:open": "allure open reports/allure/final",
